@@ -10,8 +10,10 @@ public class InputsHandler {
 	}
 	
 	public void update(){
-		if(LMD && RMD)
+		if(LMD && RMD){
+			map.createAir();
 			return;
+		}
 		if(LMD)
 			map.createDirt();
 		if(RMD)

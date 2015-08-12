@@ -34,6 +34,11 @@ public class GameMap {
 		physics.update();
 	}
 	
+	public void createAir(){
+		for(int i = 0; i < 4; i++)
+			setTile(Tile.AIR);
+	}
+	
 	public void createDirt(){
 		for(int i = 0; i < 3; i++)
 			setTile(Tile.DIRT);
